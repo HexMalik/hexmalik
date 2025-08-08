@@ -1,0 +1,12 @@
+# Ignorar archivos innecesarios del sistema
+.DS_Store
+*.log
+
+# Ignorar archivos grandes si no se usan
+*.psd
+*.zip
+*.tar
+*.rar
+
+# Si usas VS Code
+.vscode/
