@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HexMalik - Desarrollador Front-End</title>
+    <meta
+      name="description"
+      content="Malik es un un desarrollador creativo especializado en HTML, CSS, JS y sitios multilingües con animaciones modernas y adaptables. Reserva tu Proyecto Web."
+    />
+    <meta property="og:title" content="HexMalik - Portfolio Front-End" />
+    <meta
+      property="og:description"
+      content="Explora los proyectos y servicios de Malik, desarrollador web moderno y creativo."
+    />
+    <meta property="og:image" content="assets/img/og-image.jpg" />
+    <meta property="og:url" content="https://hexmalik.dev" />
+    <meta property="og:type" content="website" />
+
+    <meta
+      name="keywords"
+      content="desarrollador web, front-end, HTML, CSS, JavaScript, freelance, portfolio, multilingüe, animaciones, desarrollo web, sitios modernos"
+    />
+    <meta name="author" content="Malik Mohamed" />
+    <meta property="og:title" content="HexMalik - Front-End Developer" />
+    <meta
+      property="og:description"
+      content="Transformando ideas en experiencias digitales"
+    />
+    <meta property="og:image" content="assets/img/favicon.ico" />
+    <meta property="og:url" content="https://hexmalik.dev" />
+    <link rel="canonical" href="https://hexmalik.dev/" />
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Malik Mohamed",
+        "url": "https://hexmalik.dev",
+        "sameAs": [
+          "https://instagram.com/hexmalik0",
+          "https://linkedin.com/in/malikmym"
+        ],
+        "jobTitle": "Desarrollador Front-End",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "HexMalik"
+        }
+      }
+    </script>
+  </head>
+  <body data-theme="dark">
+    <header>
+      <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav id="main-nav">
+        <a href="#about" class="nav-link">Sobre mí</a>
+        <a href="#services" class="nav-link">Servicios</a>
+        <a href="#projects" class="nav-link">Proyectos</a>
+        <a href="#testimonials" class="nav-link">Opiniones</a>
+        <a href="#contact" class="nav-link">Contacto</a>
+        <div class="lang-switch">
+          <select id="languageSelect" aria-label="Selecciona idioma">
+            <option value="es">🇪🇸 Español</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="fr">🇫🇷 Français</option>
+          </select>
+          <button id="themeToggle" aria-label="Cambiar tema">🌓</button>
+        </div>
+      </nav>
+    </header>
+
+    <button id="scrollToTop" title="Volver arriba">⬆️</button>
+
+    <main>
+      <section id="hero" class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="assets/videos/hero-bg.mp4" type="video/mp4" />
+          Tu navegador no soporta el vídeo HTML5.
+        </video>
+        <div class="hero-overlay">
+          <div class="hero-content" data-aos="fade-up">
+            <h1 id="heroTitle">👋 Hola, soy Malik ⚡</h1>
+            <p id="heroSubtitle">
+              Desarrollador Front-End especializado en experiencias digitales
+              impactantes, accesibles y multilingües.
+            </p>
+            <a href="#contact" class="button" id="heroButton"
+              >Reserva tu proyecto</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" data-aos="fade-up">
+        <h2 id="aboutTitle">Sobre mí ⚡</h2>
+        <p id="aboutText1">
+          Soy un desarrollador web creativo especializado en HTML, CSS, JS y
+          sitios multilingües con animaciones modernas.
+        </p>
+      </section>
+
+      <section id="services" data-aos="fade-right">
+        <h2 id="servicesTitle">Servicios ⚡</h2>
+        <div class="cards">
+          <div class="card">
+            <h3 id="s1">Diseño Web</h3>
+            <p id="s1p">Sitios rápidos y adaptables a cualquier dispositivo.</p>
+          </div>
+          <div class="card">
+            <h3 id="s2">Multilenguaje</h3>
+            <p id="s2p">Soporte para múltiples idiomas sin complicaciones.</p>
+          </div>
+          <div class="card">
+            <h3 id="s3">Animaciones</h3>
+            <p id="s3p">Interacciones visuales que cautivan al usuario.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" data-aos="fade-left">
+        <h2 id="portfolioTitle">Proyectos ⚡</h2>
+        <p>Aquí irán tus proyectos destacados.</p>
+      </section>
+
+      <section id="testimonials" data-aos="fade-up">
+        <h2 id="testimonialsTitle">Opiniones ⚡</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <p>"Excelente trabajo y atención. Lo recomiendo 100%."</p>
+            <div class="rating">⚡⚡⚡⚡⚡</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" data-aos="fade-up">
+        <h2 id="formTitle">Contáctame ⚡</h2>
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/mnnzvbyk"
+          method="POST"
+          novalidate
+        >
+          <label for="nombre" id="labelNombre">Nombre/Usuario:</label>
+          <input type="text" name="nombre" id="nombre" required />
+
+          <label for="email" id="labelEmail">Email:</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="mensaje" id="labelMensaje"
+            >¿Cómo te puedo ayudar?😊</label
+          >
+          <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+
+          <button type="submit" class="button" id="formButton">Enviar</button>
+          <p id="formStatus"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 HexMalik ·
+        <a href="mailto:malikmm.es@gmail.com"> 📧Hexmalik.dev@gmail.com</a> ·
+        <a href="tel:+34 622 951 859">📱 +34 622 951 859</a>
+      </p>
+      <div class="social-links">
+        <a
+          href="https://instagram.com/hexmalik0"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="#f0fe33"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.3.5.6.3 1 .7 1.3 1.3.3.4.4 1.1.5 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.3-.3.6-.7 1-1.3 1.3-.4.3-1.1.4-2.3.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.3-.5-.6-.3-1-.7-1.3-1.3-.3-.4-.4-1.1-.5-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.3.3-.6.7-1 1.3-1.3.4-.3 1.1-.4 2.3-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.4 0-4.6.1-1 .1-1.6.2-2 .4-.5.2-.8.5-1.1 1.1-.2.4-.3 1-.4 2-.1 1.2-.1 1.5-.1 4.6s0 3.4.1 4.6c.1 1 .2 1.6.4 2 .2.5.5.8 1.1 1.1.4.2 1 .3 2 .4 1.2.1 1.5.1 4.6.1s3.4 0 4.6-.1c1-.1 1.6-.2 2-.4.5-.2.8-.5 1.1-1.1.2-.4.3-1 .4-2 .1-1.2.1-1.5.1-4.6s0-3.4-.1-4.6c-.1-1-.2-1.6-.4-2-.2-.5-.5-.8-1.1-1.1-.4-.2-1-.3-2-.4-1.2-.1-1.5-.1-4.6-.1zM12 6.5c3 0 5.5 2.5 5.5 5.5S15 17.5 12 17.5 6.5 15 6.5 12 9 6.5 12 6.5zm0 1.8c-2 0-3.7 1.7-3.7 3.7s1.7 3.7 3.7 3.7 3.7-1.7 3.7-3.7-1.7-3.7-3.7-3.7zm5.6-2.3c.6 0 1 .4 1 .9s-.4.9-1 .9-.9-.4-.9-.9.4-.9.9-.9z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://linkedin.com/in/malikmym"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="#f0fe33"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.24 8.99h4.52V24H.24V8.99zM7.98 8.99h4.33v2.05h.06c.6-1.13 2.08-2.33 4.29-2.33 4.59 0 5.44 3.01 5.44 6.92V24h-4.51v-7.58c0-1.81-.03-4.15-2.53-4.15-2.53 0-2.92 1.98-2.92 4.02V24H7.98V8.99z"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX');
+    </script> -->
+  </body>
+</html>
